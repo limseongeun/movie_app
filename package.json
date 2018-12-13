@@ -6,13 +6,16 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-lines-ellipsis": "^0.13.2",
     "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -22,5 +25,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "http://limseongeun.github.io/movie_app",
+  "devDependencies": {
+    "@babel/traverse": "^7.1.6",
+    "gh-pages": "^2.0.1"
+  }
 }
